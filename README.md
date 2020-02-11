@@ -10,14 +10,14 @@
   2.
     2.1 Throw the public ssh key to your servers with the command:
       `ssh-copy-id -i ssh-key/vm_rsa.pub`
-    2.2 Либо сгенероировать свои ключи:
+    2.2 Or generate your keys:
       `ssh-keygen`
-       и положить их в дирректорию ssh-key
+       and put them in the ssh-key directory
 
-  3. Потом указать явно ваш приватный ssh ключ командой:
+  3. Then explicitly specify your private ssh key with the command:
       `eval `ssh-agent -s`; ssh-add ssh-key/vm_rsa`
   
-  4. После чего запустить одну из playbook например:
+  4. Then start one of the playbook for example:
       `ansible-playbook k8s-deploy.yml`
 
 
