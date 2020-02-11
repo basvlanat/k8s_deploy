@@ -7,10 +7,11 @@
 
 ## In order for playbooks to work, you need to:
   1. Change the inventory file located in the folder `roles/inventory`, specifying your ip in the parameter `ansible_host={{ ip_host }}` 
-  2.
-    2.1 Throw the public ssh key to your servers with the command:
+  
+  2.Throw the public ssh key to your servers with the command:
       `ssh-copy-id -i ssh-key/vm_rsa.pub`
-    2.2 Or generate your keys:
+    
+   Or generate your keys:
       `ssh-keygen`
        and put them in the ssh-key directory
 
