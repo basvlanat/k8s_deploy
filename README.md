@@ -1,6 +1,8 @@
 # Deploy kubernetes on servrs
 ## Repository consists of two playbooks:
+
  `k8s-deploy.yml` - will deploy on your Kubernetes servers on the principle of Master Slave 
+ 
  `k8s-purge.yml` - will remove Kubernetes on your servers
 
 ## In order for playbooks to work, you need to:
